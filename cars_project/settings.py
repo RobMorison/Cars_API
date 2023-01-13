@@ -67,6 +67,10 @@ TEMPLATES = [
     },
 ]
 
+# Changing a decimal from a default sting to number in Postman
+REST_FRAMEWORK = {
+    'COERCE_DECIMAL_TO_STRING': False
+}
 WSGI_APPLICATION = 'cars_project.wsgi.application'
 
 
